@@ -1,0 +1,41 @@
+// Variables
+$primaryColor: #245272;
+$primaryFont: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+
+// Global
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    position: relative;
+}
+
+// Modules
+main {
+    display: flex;
+    flex-direction: column;
+
+    h1 {
+        margin: 30px auto;
+        font-family: $primaryFont;
+        font-size: 3.5rem;
+        z-index: 1;
+        color: $primaryColor;
+        background: #fff;
+        width: fit-content;
+    }
+
+    img {
+        position: absolute;
+        z-index: 0;
+    }
+}
